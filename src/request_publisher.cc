@@ -71,7 +71,7 @@ int main(int argc, char * argv[])
         gazebo::transport::init();
         gazebo::transport::run();
         gazebo::transport::NodePtr node(new gazebo::transport::Node());
-        node->Init("default");
+        node->Init("my_custom_indoor_world");
 
         std::cout << "Request: " <<
                      " UL.x: " << request.upperleft().x() <<
